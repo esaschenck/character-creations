@@ -328,25 +328,7 @@ def main():
     query = input("Search articles with titles containing: ")
 
     # hold the dictionary of highest frenquency words in variable top_words
-    top_words = mypages.analyze_text(query)
-    
-    # construct the graphics window by calling functions in graphics.py
-    if len(top_words) != 0:
-        win = GraphWin('WordCloud', 500, 500)
-        win.setBackground('light blue')
-        w = 100
-        win.setCoords(-w, -w, w, w)
-    # initialize WordList and FrequencyList to be two empty lists
-        WordList = []
-        FrequencyList = []
-    
-    #call the class wordCloud and its method, and draw the words onto graphics window
-        WC=wordCloud(win, top_words, WordList, FrequencyList)
-        WC.setWordFeatures(win, WordList, FrequencyList)
-    
-        barGraph(top_words)
-
-    
+    top_words = mypages.analyze_text(query)    
 
 main()
     
