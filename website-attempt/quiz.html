@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C3PO</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class='quiz-page'>
+    
+    <header>
+        <h1>C3PO</h1>
+        <p>
+            Cartoon Character Creator Program Online
+        </p>
+    </header>
+    
+    <h1>Page 2</h1>
+
+    <button onclick="retrieveStorage()">Review previous choices</button>
+
+    <h4 id="localstorage"></h4>  
+
+    <section id='quiz2'>
+        <p> 
+            Whew! Now that we've got your priorities sorted, time for some more decisions!
+        </p>
+        
+
+        <button onclick="revealQ1()" ">Show Question</button>
+        <h3 id = 'question1'></h3>
+        <form>
+            <input type='radio' id='choice1' class='secq' name='choice1' value='choice1'>
+            <label for='choice1'></label><br>
+
+            <input type='radio' class='secq' id='choice2' name='choice2' value='choice2'>
+            <label for='choice2'></label><br>
+
+            <input type='radio' class='secq' id='choice3' name='choice3' value='choice3'>
+            <label for='choice3'></label><br>
+        </form>
+        <br>
+        
+        <button onclick="revealQ2()" ">Show Question</button>
+        <h3 id='question2'></h3>
+        <form>
+            <input type='radio' id='choice4' class='secq' name='choice4' value='choice4'>
+            <label for='choice4'></label><br>
+
+            <input type='radio' class='secq' id='choice5' name='choice5' value='choice5'>
+            <label for='choice5'></label><br>
+
+            <input type='radio' class='secq' id='choice6' name='choice6' value='choice6'>
+            <label for='choice6'></label><br>
+        </form>
+        <br>
+
+        <button onclick="revealQ3()" ">Show Question</button>
+        <h3 id="question3"></h3>
+        <form>
+            <input type='radio' id='choice7' class='secq' name='choice7' value='choice7'>
+            <label for='choice7'></label><br>
+
+            <input type='radio' class='secq' id='choice8' name='choice8' value='choice8'>
+            <label for='choice8'></label><br>
+
+            <input type='radio' class='secq' id='choice9' name='choice9' value='choice9'>
+            <label for='choice9'></label><br>
+        </form>
+        <br>
+        <button onclick="submitChoices()" id="submit">Get Results</button>
+
+        <h4 id="answer"></h4>  
+
+    </section>
+
+
+
+    
+    
+
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
