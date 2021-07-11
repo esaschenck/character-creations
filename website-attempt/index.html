@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C3PO</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<!-- tutorial from https://docs.microsoft.com/en-us/learn/modules/build-simple-website/1-introduction -->
+<body class='welcome-page'>
+    
+    <!--- help with header, nav, layout in general from w3, esp the page https://www.w3schools.com/html/html5_semantic_elements.asp-->
+    <header>
+        <h1>C3PO</h1>
+        <p>
+            Cartoon Character Creator Program Online
+        </p>
+    </header>
+    
+    <h1>Welcome to the cartoon character creator program online -- C3PO!</h1>
+
+    <p>
+        We're going to be taking a quiz today to create YOUR unique original character. <br/> <br/>
+
+        Are you ready??
+    </p>
+
+    <section id='quiz1'>
+        <p> 
+            First thing's first... which THREE of these are most important to you?
+        </p>
+        
+        <form>
+            <input type='checkbox' class='firstq' id='hairColor' name='hairColor' value='hairColor'>
+            <label for='hair'>Hair color</label><br>
+
+            <input type='checkbox' class='firstq' id='age' name='age' value='age'>
+            <label for='age'>Age</label><br>
+
+            <input type='checkbox' class='firstq' id='skinTone' name='skinTone' value='skinTone'>
+            <label for='skinTone'>Skin Tone</label><br>
+
+            <input type='checkbox' class='firstq' id='gender' name='gender' value='gender'>
+            <label for='gender'>Gender</label><br>
+
+            <input type='checkbox' class='firstq' id='weight' name='weight' value='weight'>
+            <label for='weight'>Weight</label><br>
+
+            <input type='checkbox' class='firstq' id='hairTexture' name='hairTexture' value='hairTexture'>
+            <label for='hairTexture'>Hair Texture</label><br>
+
+            <input type='checkbox' class='firstq' id='makeup' name='makeup' value='makeup'>
+            <label for='makeup'>Makeup</label><br>
+
+            <input type='checkbox' class='firstq' id='glasses' name='glasses' value='glasses'>
+            <label for='glasses'>Glasses</label><br>
+
+            <input type='checkbox' class='firstq' id='mustache' name='mustache' value='mustache'>
+            <label for='mustache'>Mustache</label><br>
+        </form>
+        <br>
+
+        <button onclick="doThings()" id="submit">Get Results</button>
+
+        <h4 id="result"></h4>  
+        
+        <button id='pg2' onclick="document.location='quiz.html'">Next!</button>
+        
+
+    </section>
+
+
+
+    
+    
+
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
