@@ -66,31 +66,8 @@ def cartoonify(preCartoon, line_size = 7, blur_value = 7, total_color = 9):
 
 
   # same images from stackoverflow: https://stackoverflow.com/questions/14452824/how-can-i-save-an-image-with-pil
-  from PIL import Image
 
-  newimg = Image.fromarray(cartoon)
+  return cartoon
 
-  newimg.save("img.jpg")
+  
 
-#cartoonify("piper.png")
-
-# face merge
-
-#import facemerge
-
-#merged_face = facemerge.morph_faces('one.jpg', 'two.jpg')
-
-#print(type(merged_face))
-
-
-import facemorpher
-
-# Get a list of image paths in a folder
-imgpaths = facemorpher.list_imgpaths('testPhotos')
-
-print(type(imgpaths))
-# To morph, supply an array of face images:
-#facemorpher.morpher(imgpaths, plot=True)
-
-# To average, supply an array of face images:
-#facemorpher.averager(['image1.png', 'image2.png'], plot=True)

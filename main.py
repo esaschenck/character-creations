@@ -22,3 +22,9 @@ def askReady():
 
 askReady()
 
+import create_image as ci
+from Pillow import Image
+
+cartoon = ci.cartoonify("048116.jpg")
+newimg = Image.fromarray(cartoon)
+newimg.save("img.jpg")
